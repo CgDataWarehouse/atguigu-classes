@@ -16,10 +16,10 @@ object Spark01_RDD_Memory {
     //    val rdd: RDD[Int] = sc.parallelize(list)
     val rdd: RDD[Int] = sc.makeRDD(list)
 
-//    val rdd2: RDD[Int] = sc.parallelize(list) 避免重复创建同一个rdd
+    //    val rdd2: RDD[Int] = sc.parallelize(list) 避免重复创建同一个rdd
 
-//    rdd.collect().foreach(println(_))
- rdd.collect().foreach(print)
+    //    rdd.collect().foreach(println(_))
+    rdd.collect().foreach(print)
     // 关闭环境
 
     sc.stop()
