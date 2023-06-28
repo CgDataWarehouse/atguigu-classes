@@ -21,6 +21,7 @@ object Spark01_RDD_Memory {
 //    rdd.collect().foreach(println(_))
  rdd.collect().foreach(print)
     // 关闭环境
+
     sc.stop()
   }
 }
